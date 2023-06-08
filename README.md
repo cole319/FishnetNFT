@@ -1,33 +1,36 @@
-# AI NFT Generator
+# FishnetNFT
+### (AI NFT Generator)
 
-## Technology Stack & Tools
+### Demo UI 
+![fishnetNFTui2](https://github.com/cole319/FishnetNFT/assets/108489425/fdce062b-ceec-46f1-b79b-a683b9e62edc)
 
-- Solidity (Writing Smart Contracts & Tests)
-- Javascript (React & Testing)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [React.js](https://reactjs.org/) (Frontend Framework)
-- [NFT.Storage](https://nft.storage/) (Connection to IPFS)
-- [Hugging Face](https://huggingface.co/) (AI Models)
+## Tech Stack
+
+- Writing Smart Contracts & Tests : Solidity
+- Client Side Development : Javascript
+- Development Framework : Hardhat
+- Blockchain Interaction with Blockchain : Ethers.js
+- Frontend Framework used for Frontend : React.js
+- Connection to IPFS : NFT.Storage
+- AI Models : Hugging Face
 
 ## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/)
+- NodeJS is required to run this app
 
 ## Setting Up
 ### 1. Clone/Download the Repository
 
+
 ### 2. Install Dependencies:
 `$ npm install`
 
-### 3. Setup .env file:
-Before running any scripts, you'll want to create a .env file with the following values (see .env.example):
+### 3. Setup .env file with required APIs
 
-- **REACT_APP_HUGGING_FACE_API_KEY=""**
-- **REACT_APP_NFT_STORAGE_API_KEY=""**
+### Get Read access token from
+[Hugging Face](https://huggingface.co/) 
 
-You'll need to create an account on [Hugging Face](https://huggingface.co/), visit your profile settings, and create a read access token. 
-
-You'll also need to create an account on [NFT.Storage](https://nft.storage/), and create a new API key.
+### Get API key
+[NFT.Storage](https://nft.storage/)
 
 ### 4. Run tests
 `$ npx hardhat test`
