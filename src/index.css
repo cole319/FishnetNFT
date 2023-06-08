@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Kanit:wght@200;300;400;600&display=swap");
 
 * {
   margin: 0;
@@ -20,7 +22,10 @@
 
 body {
   margin: 0;
-  font-family: "Play";
+  /* font-family: "Play"; */
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Fjalla One", sans-serif; */
+  font-family: "Kanit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--clrp-blue-body);
@@ -61,7 +66,10 @@ nav {
   border: none;
   border-radius: 4px;
 
-  font-family: "Play";
+  /* font-family: "Play"; */
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Fjalla One", sans-serif; */
+  font-family: "Kanit", sans-serif;
   font-size: 1.1em;
   font-weight: 600;
 
@@ -101,6 +109,10 @@ form input[type="text"] {
 
   background-color: var(--clrp-white-text);
   border: 1px solid var(--clrp-blue-logo);
+  font-family: "Kanit", sans-serif;
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Fjalla One", sans-serif; */
+  color: var(--clrp-blue-body);
   border-radius: 4px;
 
   font-size: 1.1em;
@@ -118,9 +130,11 @@ form input[type="submit"] {
   border: none;
   border-radius: 4px;
 
-  font-family: "Play";
+  /* font-family: "Play"; */
+  /* font-family: "Fjalla One", sans-serif; */
+  font-family: "Kanit", sans-serif;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 400;
 
   cursor: pointer;
   transition: all 250ms ease;
@@ -172,10 +186,12 @@ p {
   justify-content: center;
   align-items: center;
   color: var(--clrp-white-text);
+  font-family: "Kanit", sans-serif;
 }
 
 a {
   color: var(--clrp-blue-link);
+  font-family: "Kanit", sans-serif;
 }
 
 a:hover {
@@ -184,6 +200,7 @@ a:hover {
 
 h6 {
   color: var(--clrp-blue-logo);
+  font-family: "Kanit", sans-serif;
 }
 
 footer {
@@ -192,6 +209,7 @@ footer {
   position: relative;
   background-color: var(--clrp-blue-navbar);
   padding: 20px;
+  font-family: "Kanit", sans-serif;
 }
 
 @media screen and (max-width: 768px) {

@@ -12,7 +12,7 @@ const Navigation = ({ account, setAccount }) => {
   return (
     <nav>
       <div className="nav__brand">
-        <h1>FishnetNFT</h1>
+        <h1>Fishnet NFT</h1>
       </div>
 
       {account ? (
