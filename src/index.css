@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clrp-white-text: #e0f9f1;
+  --clrp-blue-logo: #3bacb6;
+  --clrp-blue-connect: #2f8f9d;
+  --clrp-blue-navbar: #16213e;
+  --clrp-blue-body: #133b5c;
+  --clrp-blue-link: #82dbd8;
+  --clrp-blue-image: #0f4c75;
+  --clrp-red-connect: #ff6000;
+  --clrp-red-connect-hover: #fc9683;
+}
+
+body {
+  margin: 0;
+  font-family: "Play";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clrp-blue-body);
+}
+
+/* ------------------------------------------------------ */
+/* -- NAVIGATION -- */
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: var(--clrp-blue-navbar);
+}
+
+.nav__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.nav__brand h1 {
+  color: var(--clrp-blue-logo);
+  font-size: clamp(1.75em, 4vw, 2.5em);
+  font-weight: 800;
+}
+
+.nav__connect {
+  width: 175px;
+  height: 50px;
+  margin: 0 auto;
+
+  background-color: var(--clrp-red-connect);
+  color: var(--clrp-white-text);
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: "Play";
+  font-size: 1.1em;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.nav__connect:hover {
+  background-color: var(--clrp-red-connect-hover);
+}
+
+/* ------------------------------------------------------ */
+/* -- FORM -- */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 600px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin: 0 25px;
+}
+
+form input[type="text"] {
+  width: 250px;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+
+  background-color: var(--clrp-white-text);
+  border: 1px solid var(--clrp-blue-logo);
+  border-radius: 4px;
+
+  font-size: 1.1em;
+}
+
+form input[type="submit"] {
+  background-color: var(--clrp-blue-connect);
+  color: var(--clrp-white-text);
+
+  width: 250px;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: "Play";
+  font-size: 1.1em;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--clrp-blue-logo);
+}
+
+/* ------------------------------------------------------ */
+/* -- IMAGE -- */
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 90%;
+  width: 512px;
+  height: 512px;
+  margin: 0 25px;
+  border: 1px solid var(--clrp-blue-logo);
+  border-radius: 4px;
+  background-color: var(--clrp-blue-image);
+
+  overflow: hidden;
+}
+
+.image img {
+  width: 512px;
+  height: 512px;
+  border-radius: 6px;
+}
+
+.image__placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image__placeholder p {
+  margin: 0 10px;
+}
+
+/* ------------------------------------------------------ */
+/* -- TEXT -- */
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clrp-white-text);
+}
+
+a {
+  color: var(--clrp-blue-link);
+}
+
+a:hover {
+  color: var(--clrp-blue-logo);
+}
+
+h6 {
+  color: var(--clrp-blue-logo);
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  position: relative;
+  background-color: var(--clrp-blue-navbar);
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+}
