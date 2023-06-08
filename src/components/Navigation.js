@@ -1,4 +1,5 @@
 import { ethers } from "ethers";
+import FishnetLogo from "../icon/fishnet.png";
 
 const Navigation = ({ account, setAccount }) => {
   const connectHandler = async () => {
@@ -12,6 +13,8 @@ const Navigation = ({ account, setAccount }) => {
   return (
     <nav>
       <div className="nav__brand">
+        {/* <FishnetLogo /> */}
+        <img src={FishnetLogo} alt="logo" height={50} width={70} />
         <h1>Fishnet NFT</h1>
       </div>
 
