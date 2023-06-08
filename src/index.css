@@ -71,7 +71,7 @@ nav {
   /* font-family: "Fjalla One", sans-serif; */
   font-family: "Kanit", sans-serif;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 400;
 
   cursor: pointer;
   transition: all 250ms ease;
@@ -134,7 +134,7 @@ form input[type="submit"] {
   /* font-family: "Fjalla One", sans-serif; */
   font-family: "Kanit", sans-serif;
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 300;
 
   cursor: pointer;
   transition: all 250ms ease;

@@ -141,17 +141,17 @@ const App = () => {
         <form onSubmit={submitHandler}>
           <input
             type="text"
-            placeholder="Create a name..."
+            placeholder="Enter a name..."
             onChange={(e) => {
               setName(e.target.value);
             }}
           />
           <input
             type="text"
-            placeholder="Create a description..."
+            placeholder="Describe your idea here..."
             onChange={(e) => setDescription(e.target.value)}
           />
-          <input type="submit" value="Create & Mint" />
+          <input type="submit" value="Generate and Mint NFT" />
         </form>
 
         <div className="image">
@@ -159,7 +159,7 @@ const App = () => {
             <img src={image} alt="AI generated image" />
           ) : isWaiting ? (
             <div className="image__placeholder">
-              <Spinner animation="border" />
+              <Spinner animation="grow" variant="light" />
               <p>{message}</p>
             </div>
           ) : (

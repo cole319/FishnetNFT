@@ -24,7 +24,7 @@ const Navigation = ({ account, setAccount }) => {
         </button>
       ) : (
         <button type="button" className="nav__connect" onClick={connectHandler}>
-          Connect
+          Connect Wallet
         </button>
       )}
     </nav>
